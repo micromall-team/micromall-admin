@@ -2,8 +2,8 @@
   <h1>{{ msg }}</h1>
 
   <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
+    Recommended IDE setup:1
+    <a href="https://code.visualstudio.com/" target="_blank">VSaCode</a>
     +
     <a
       href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
