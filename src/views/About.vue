@@ -5,11 +5,10 @@
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'About',
-  data() {
-    return {
-      msg: 'About Pag1',
-    }
+  setup() {
+    let msg:string = '张三真帅' 
+    
+    return {msg}
   },
-  setup() {},
 })
 </script>
