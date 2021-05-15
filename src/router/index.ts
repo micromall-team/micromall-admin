@@ -5,8 +5,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '',
     redirect: (_) => {
-      return { path: '/404' }
+      return { path: '/login' }
     },
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('/src/views/login/login.vue'),
   },
   {
     path: '/home',

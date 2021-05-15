@@ -2,7 +2,7 @@
   "name": "micromall-admin",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
     "dev:prod": "vite --mode production",
     "build": "vue-tsc --noEmit && vite build --mode production",
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
