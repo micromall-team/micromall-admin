@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 import About from '../components/About.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '',
     redirect: (_) => {
-      return { path: '/home' }
+      return { path: '/404' }
     },
   },
   {
@@ -19,14 +20,14 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component:About,
+    component: About,
   },
-   {
-          path: '/404',
-          component: () =>
-              import ('@/views/errorPage/404'),
-          hidden: true
-      },
+  {
+    path: '/404',
+    component: () =>
+      import('/src/views/errorPage/404.vue'),
+
+  },
   {
     path: '/:currentPath(.*)*', // 路由未匹配到，进入这个
     redirect: (_) => {
