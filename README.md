@@ -21,5 +21,11 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Env and dependencies
+
+- node
+- npm
+- vite
+- eslint
+- @vue/cli
+- [ant-design-vue@1.x](https://github.com/vueComponent/ant-design-vue) - Ant Design Of Vue 
